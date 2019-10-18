@@ -13,7 +13,7 @@
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
-__published:	// Composants gérés par l'EDI
+__published:	// Composants gÃ©rÃ©s par l'EDI
 	TButton *btnInitialisationCarte;
 	TLabel *Label1;
 	TButton *Button1;
@@ -23,11 +23,12 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall btnInitialisationCarteClick(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall EcritureClick(TObject *Sender);
-private:	// Déclarations utilisateur
-public:		// Déclarations utilisateur
+private:	// DÃ©clarations utilisateur
+public:		// DÃ©clarations utilisateur
 	__fastcall TForm1(TComponent* Owner);
 
 	PCI9111 *maCarte;
+	int ID_Card;
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TForm1 *Form1;
